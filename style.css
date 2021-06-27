@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+.home {
+  background-image: url("./assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.home > h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  margin: 20vh auto auto 15vh;
+}
+
+.home > p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Mukta", sans-serif;
+  margin: 5vh 15vh;
+}
+
+.home > a {
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 5vh auto auto 15vh;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  font-family: "Staatliches", cursive;
+  border-radius: 50px;
+  transition-duration: 200ms;
+}
+.home > a:hover {
+  color: #0a1128;
+  background-color: #fff;
+  transition-duration: 200ms;
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    text-align: center;
+    background-image: url("./assets/fg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+  }
+  .home > h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: "Staatliches", cursive;
+    margin: 10vh 10vh auto 10vh;
+  }
+  .home > p {
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: "Mukta", sans-serif;
+    margin: 5vh 5vh;
+  }
+  .home > a {
+    color: #fff;
+    border: 1px solid #fff;
+    margin: auto;
+  }
+}

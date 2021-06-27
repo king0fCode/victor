@@ -1,0 +1,68 @@
+.services {
+  height: 90vh;
+  overflow: hidden;
+  z-index: -1;
+  background-image: url("./assets/bg2.jpg");
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service {
+  width: 200px;
+  height: 300px;
+  margin: 40px;
+  position: relative;
+  left: 20px;
+  color: #fff;
+  background-color: #0000002c;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  border-radius: 10px;
+  transition-duration: 200ms;
+}
+
+.service:hover {
+  box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(41, 255, 184);
+  transition-duration: 200ms;
+}
+.mt {
+  margin-top: 10%;
+}
+
+.service > .fa {
+  font-size: 5rem;
+}
+
+.services > h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Staatliches", cursive;
+}
+
+@media screen and (max-width: 800px) {
+  .services {
+    overflow: visible;
+    height: 100%;
+    background-image: url("./assets/fg2.jpg");
+  }
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .service {
+    width: 250px;
+    height: 200px;
+    color: #fff;
+    background-color: #00000000;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    transition-duration: 200ms;
+  }
+}

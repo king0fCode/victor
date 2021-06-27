@@ -1,0 +1,51 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  height: 30vh;
+  background-image: url("./assets/bg3.jpg");
+  color: #fff;
+  overflow: hidden;
+}
+
+.content-footer {
+  justify-self: start;
+  border-left: 2px solid rgb(41, 255, 184);
+  padding: 20px;
+  margin: 40px;
+  font-family: "Mukta", sans-serif;
+}
+
+.logo-footer {
+  justify-self: end;
+  margin: 100px;
+  font-family: "Staatliches", cursive;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: grid;
+    height: 100%;
+    margin: 0;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 2fr;
+    text-align: center;
+    justify-content: center;
+    height: 45vh;
+  }
+  .logo-footer {
+    justify-self: end;
+    margin: 50px auto;
+    font-family: "Staatliches", cursive;
+  }
+
+  .content-footer {
+    border-left: 0px;
+    border-top: 2px solid rgb(41, 255, 184);
+    border-bottom: 2px solid rgb(41, 255, 184);
+    justify-self: center;
+    padding: 20px auto;
+    height: fit-content;
+    margin: 5px;
+  }
+}
